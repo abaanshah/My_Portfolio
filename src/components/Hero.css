@@ -1,0 +1,138 @@
+.hero{
+  height: 200vh;
+ /* background-color: #221010; */
+ width: 85vw;
+ margin: 0 auto;
+}
+.hero-container{
+  display: flex;
+  width: 90vw;
+  /* margin: 0 auto; */
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid white; */
+  margin-top: 25vh;
+  line-height: 1;
+  
+}
+.hero-img{
+  width: 400px;
+  height: 60vh;
+  background-color: #fff;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.hero-img img{
+  width: 100%;
+  height: 100%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.hero-text{
+  width: 60%;
+  /* background: #611e1e; */
+  text-align: left;
+  margin-left: 50px;
+}
+
+.hero-container .hero-text p{
+   /* letter-spacing: 2px; */
+  /* font-weight:600; */
+  font-size: 65px;
+  /* background-color: #b95151; */
+  margin: 0 auto;
+  /* margin-left: 10%; */
+}
+.hero-subpart{
+  display: flex;
+  width: 80vw;
+  justify-content: space-around;
+}
+.social-links{
+  /* background-color: #8cb2e7; */
+  width: 50%;
+  border-top: 1px solid rgb(50, 49, 49);
+  display: flex;
+  gap: 25px;
+  color: #b4b7ba;
+  font-size: 0.9em;
+  margin-top: 60px;
+  margin-left: 50px;
+  padding-top: 70px;
+}
+.social-links a{
+  /* background-color: orange; */
+  /* width:100px; */
+  display:flex;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+
+.social-links:hover a {
+  opacity: 0.5; /* Reduce opacity for all */
+}
+
+.social-links a:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.hero-subtext{
+  margin-top: 40px;
+  margin-left: 10px;
+  font-size: 1.2rem;
+  color: #9b9fa0;
+  /* background-color: #fff; */
+  width: 600px;
+  /* border: 2px solid gray; */
+}
+.hero-subtext button{
+  background-color: #b4b7ba;
+  color:black;
+  height: 50px;
+  width: 150px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  font-size: 1rem;
+  font-family:sans-serif;
+  font-weight: 600;
+}
+
+.logo-slider {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  /* width: 100vw; */
+  background-color: #0b0c0e;
+  padding: 35px 0;
+  margin-top: 160px;
+  font-size:35px;
+  border-top: 1px solid rgb(88, 86, 86);
+  border-bottom: 1px solid rgb(88, 86, 86);
+  /* font-weight: 600; */
+  opacity: 0.3;
+}
+
+.logo-track {
+  display: flex;
+  gap: 60px;
+  animation: scroll 20s linear infinite; /* Adjust speed */
+}
+
+.logo-track img {
+  width: 100px; /* Adjust logo size */
+  height: auto;
+}
+
+/* Keyframes for infinite scrolling */
+@keyframes scroll {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-50%);
+  }
+}
