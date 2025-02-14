@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Navbar = () => {
   useEffect(() => {
     gsap.to(".navbar", {
-      width: "55%", 
+      width: "50%", 
       duration: 1.5,
       y:10,
       // ease: "power",

@@ -16,17 +16,17 @@
   backdrop-filter: blur(100px);
   -webkit-backdrop-filter: blur(50px);
   border-radius: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(105, 153, 64, 0.4);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .nav-links {
   display: flex;
-
   align-items: center;
   gap: 30px;
+  font-size: 18px;
   /* background-color: #fff; */
 }
-.navbar .logo p {
-  /* color: #fff; */
+.navbar  li:hover {
+  color: #fff;
   /* font-size: 3em; */
 }

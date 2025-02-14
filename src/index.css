@@ -2,7 +2,7 @@
 :root {
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #080404;
+  /* background-color:linear-gradient(from left, rgba(255, 255, 255, 0)); */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -14,10 +14,20 @@
 
 
 body {
-  font-family: 'Clash Display', sans-serif;
+  /* width: 80vw; */
+  /* margin: 0 auto; */
+  /* font-weight: 600; */
+  /* font-family: 'Clash Display', sans-serif; */
 }
 
-
+h2{
+  font-size: 25px;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 600;
+  color:#b5ff6d;
+  text-align: center;
+  margin-bottom: 30px;
+}
 /* 
 @media (prefers-color-scheme: light) {
   :root {

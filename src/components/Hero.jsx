@@ -3,50 +3,12 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Hero.css";
 // import "..assets/fonts/clash-display.css"
-
+// import AnimatedText from "../components/AnimatedText";
+import AutoAnimation from "../Animations/AutoAnimation";
+// import CircularText from "../Animations/CircularText";
 gsap.registerPlugin(ScrollTrigger);
 
-const AnimatedText = ({ text }) => {
-  useEffect(() => {
-    gsap.fromTo(
-      ".word-animate .letter-animate",
-      {
-        color: "white",
-        // opacity: 0,
-        // scale:0,
-        // y: 50,
-      },
-      {
-        color: "#b5ff6d",
-        // opacity: 1,
-        // scale:1,
-        // y: 0,
-        duration: 0.5,
-        stagger: 0.05, // Animate letter by letter
-        ease: "power2.out",
-        delay: 0.3,
-      }
-      );
-      
 
-  }, []);
-
-
-  return (
-    <>
-      {text.split(" ").map((word, index) => (
-        <span key={index} className="word-animate" style={{ display: "inline-block", whiteSpace: "nowrap" }}>
-          {word.split("").map((char, i) => (
-            <span key={i} className="letter-animate" style={{ display: "inline-block" }}>
-              {char}
-            </span>
-          ))}
-          &nbsp;
-        </span>
-      ))}
-    </>
-  );
-};;
 
 // Hero Component
 const Hero = () => {
@@ -57,9 +19,16 @@ const Hero = () => {
           <img src="https://learnenglish.britishcouncil.org/sites/podcasts/files/2021-10/RS6715_492969113-hig.jpg" alt="" />
         </div> */}
         <div className="hero-text">
-        <p className="text-pretty">I'm a <AnimatedText text="front-end developer"/>with a passion for creating <AnimatedText text="engaging and visually"/>appealing websites.</p>
+        <p className="text-pretty">I'm a <AutoAnimation scrollTrigger={false} text="front-end developer"/>with a passion for creating <AutoAnimation text="engaging and visually"/>appealing websites.</p>
         </div>
-        {/* <a href="#about">Learn More</a> */}
+        {/* <CircularText
+  text="INCREASE*MY*SPEED*"
+  onHover="speedUp"
+  spinDuration={20}
+  className="custom-class"
+/> */}
+        
+        <a href="#about">Learn More</a>
       </div>
       <div className="hero-subpart">
       <div className="social-links">
