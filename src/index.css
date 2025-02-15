@@ -11,14 +11,17 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* 
+html{
+  scroll-behavior: smooth;
+} */
 
-
-body {
-  /* width: 80vw; */
-  /* margin: 0 auto; */
-  /* font-weight: 600; */
-  /* font-family: 'Clash Display', sans-serif; */
-}
+/* body {
+  width: 80vw;
+  margin: 0 auto;
+  font-weight: 600;
+  font-family: 'Clash Display', sans-serif;
+} */
 
 h2{
   font-size: 25px;

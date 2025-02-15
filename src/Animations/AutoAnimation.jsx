@@ -2,8 +2,7 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-
-const AutoAnimation = ({ text, color = "white", stagger = 0.04 }) => {
+const AutoAnimation = ({ text, color = "white", stagger = 0.045 }) => {
   const textRef = useRef(null);
 
   useEffect(() => {
@@ -17,7 +16,7 @@ const AutoAnimation = ({ text, color = "white", stagger = 0.04 }) => {
         duration: 0.2,
         stagger: stagger,
         ease: "power2.out",
-        delay: 0.3,
+        delay: 0.8,
       }
     );
   }, [color, stagger]);

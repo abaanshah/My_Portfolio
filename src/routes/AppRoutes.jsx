@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
 
-// import About from "../pages/About";
+// import AboutMe from "../components/AboutMe";
 // import Contact from "../pages/Contact";
 import MainLayout from "../layouts/MainLayout";
 // import Dialer from "../pages/Dialer";
@@ -14,7 +14,7 @@ function AppRoutes() {
       <MainLayout>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/about" element={<About />} /> */}
+          {/* <Route path="/about" element={<AboutMe />} /> */}
           {/* <Route path="/partners" element={<ContactUs />} /> */}
           {/* <Route path="/contact-us" element={<Contact />} /> */}
           {/* <Route path="/services" element={<Dialer />} /> */}

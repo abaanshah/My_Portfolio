@@ -1,38 +1,51 @@
 import React, { useEffect } from "react";
+// import { Link } from "react-router-dom";
 import gsap from "gsap";
 // import { useGSAP } from '@gsap/react';
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Navbar.css";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger,ScrollToPlugin);
 
 const Navbar = () => {
   useEffect(() => {
-    gsap.to(".navbar", {
+    gsap.to(".navbar",{
       width: "50%", 
       duration: 1.5,
-      y:10,
       // ease: "power",
       scrollTrigger: {
         trigger: ".navbar",
         start: "top 2%",
-        end: "+=200",
+        end: "+=100",
         // markers: true,
         scrub: 2, // Smooth transition
       },
     });
-  }, []);
+  }, 
+  []);
+    // Custom smooth scrolling function
+    const scrollToSection = (e, target) => {
+      e.preventDefault();
+      const section = document.querySelector(target);
+      if (section) {
+        const yOffset = section.offsetTop; // Get section position
+        gsap.to(window, { duration: 1.5, scrollTo: yOffset-105, ease: "power2.out" });
+      }
+    };
+  
 
   return (
     <nav className="navbar">
       <div className="logo">
-        <p>AB</p>
+        <p>SABS</p>
       </div>
       <ul className="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <li><a href=".hero" onClick={(e) => scrollToSection(e, ".hero")}>Home</a></li>
+        <li><a href=".aboutme" onClick={(e) => scrollToSection(e, ".aboutme")}>About</a></li>
+        <li><a href=".projects" onClick={(e) => scrollToSection(e, ".projects")}>Projects</a></li>
+        <li><a href=".skills" onClick={(e) => scrollToSection(e, ".skills")}>Skills</a></li>
+        <li><a href="#contact" onClick={(e) => scrollToSection(e, ".contact")}>Contact</a></li>
       </ul>
       <div className="theme"></div>
     </nav>

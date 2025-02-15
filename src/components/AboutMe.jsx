@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollAnimation from '../Animations/ScrollAnimation';
 const AboutMe = () => {
   return (
-    <div className='aboutme'>
+    <div className='aboutme' >
       <h2>ABOUT ME</h2>
       <p> <ScrollAnimation  color="white" scrollTrigger = {true} text="I build modern, high-quality websites that not only look great but feel intuitive and engaging. Whether it's a business site or a fully interactive web experience, I use cutting-edge technologies like React and GSAP to make every project stand out. Let’s make your ideas a reality!" /></p>
     </div>

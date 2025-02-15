@@ -22,9 +22,9 @@ gsap.registerPlugin(ScrollTrigger);
 const Home = () => {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 2,
+      duration: 2.5,
       smooth: true,
-      ease: 0.1, // Adjust for heavier effect
+      ease: 0.15, // Adjust for heavier effect
     });
   
     function raf(time) {

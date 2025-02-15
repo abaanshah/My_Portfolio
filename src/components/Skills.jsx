@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Skills.css"; // Import CSS for styling
+import SpotlightCard from "../ui/SpotlightCard";
 
 const Skills = () => {
   // Default video when no skill is hovered
@@ -38,14 +39,15 @@ const Skills = () => {
       <div className="skills-container">
         <div className="skill-cards">
           {skills.map((skill, index) => (
-            <div
-              key={index}
-              className={`scard ${index % 2 === 0 ? "left" : "right"}`}
-              onMouseEnter={() => setVideoSrc(skill.video)} // Change video on hover
-              onMouseLeave={() => setVideoSrc(defaultVideo)} // Reset to default video
-            >
-              <p>{skill.name}</p>
-            </div>
+            <SpotlightCard spotlightColor="rgba(100, 329,35, 0.15)"  key={index}> {/* Wrap each card individually */}
+              <div
+                className={`scard ${index % 2 === 0 ? "left" : "right"}`}
+                onMouseEnter={() => setVideoSrc(skill.video)} // Change video on hover
+                onMouseLeave={() => setVideoSrc(defaultVideo)} // Reset to default video
+              >
+                <p>{skill.name}</p>
+              </div>
+            </SpotlightCard>
           ))}
         </div>
         <div className="skill-video">
