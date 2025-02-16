@@ -12,6 +12,7 @@ const Navbar = () => {
   useEffect(() => {
     gsap.to(".navbar",{
       width: "50%", 
+      y:10,
       duration: 1.5,
       // ease: "power",
       scrollTrigger: {
@@ -36,6 +37,7 @@ const Navbar = () => {
   
 
   return (
+    <>
     <nav className="navbar">
       <div className="logo">
         <p>SABS</p>
@@ -45,10 +47,14 @@ const Navbar = () => {
         <li><a href=".aboutme" onClick={(e) => scrollToSection(e, ".aboutme")}>About</a></li>
         <li><a href=".projects" onClick={(e) => scrollToSection(e, ".projects")}>Projects</a></li>
         <li><a href=".skills" onClick={(e) => scrollToSection(e, ".skills")}>Skills</a></li>
-        <li><a href="#contact" onClick={(e) => scrollToSection(e, ".contact")}>Contact</a></li>
+        <li><a href=".contact" onClick={(e) => scrollToSection(e, ".contact")}>Contact</a></li>
       </ul>
       <div className="theme"></div>
+      
+     
     </nav>
+    <div className="top"><a href=".hero" onClick={(e) => scrollToSection(e, ".hero")}>↑</a></div>
+    </>
   );
 };
 
