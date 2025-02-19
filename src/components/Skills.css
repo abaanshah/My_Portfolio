@@ -1,5 +1,5 @@
 .skills{
-  height: 100vh;
+  /* height: 100vh; */
   width: 80vw;
   margin: 100px auto;
 
@@ -32,23 +32,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 /* .scard.left {
   transform: rotate(12deg);
   margin-left: -50px;
-
+  
 }
 
 .scard.right {
- margin-left: 50px;
- transform: rotate(12deg);
+  margin-left: 50px;
+  transform: rotate(12deg);
 } */
 /* .scard:hover {
   background: #1d1d1d;
   transform: scale(1.05)  ;
   margin: 0;
-
+  
 } */
 
 .skill-video {
@@ -56,13 +55,23 @@
   height: 350px;
   overflow: hidden;
   border-radius: 10px;
+  filter:brightness(.75) blur(1px) ;
+  transition: 0.3s ease-in-out;
 }
-.overlay{
+.skill-video:hover{
+  filter: brightness(1) blur(0px);
+}
+
+
+/* .scard:hover .skill-video{
+  filter: blur(0);
+} */
+/* .overlay{
   position: absolute;
   background-color:rgba(0,0,0,0.3);
   width:550px;
   height: 350px;
-}
+} */
 
 .skill-media {
   width: 100%;

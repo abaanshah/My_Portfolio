@@ -6,6 +6,9 @@ import Lenis from "@studio-freight/lenis";
 import AboutMe from "../components/AboutMe";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
+import Contact from "../components/Contact";
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 // gsap.to(".home", {
@@ -40,6 +43,7 @@ const Home = () => {
       <AboutMe/>
       <Projects/>
       <Skills/>
+      <Contact/>
     </div>
   )
 }

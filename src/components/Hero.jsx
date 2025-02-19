@@ -61,6 +61,18 @@ const Hero = () => {
             <p>DESIGNER</p>
             <p>ANIMATION</p>
             <p>GRAPHICS</p>
+            <p>DEVELOPER</p>
+            <p>DESIGNER</p>
+            <p>ANIMATION</p>
+            <p>GRAPHICS</p>
+            <p>DEVELOPER</p>
+            <p>DESIGNER</p>
+            <p>ANIMATION</p>
+            <p>GRAPHICS</p>
+            <p>DEVELOPER</p>
+            <p>DESIGNER</p>
+            <p>ANIMATION</p>
+            <p>GRAPHICS</p>
           </div>
         </div>
       </div>
