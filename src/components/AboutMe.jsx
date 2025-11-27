@@ -8,8 +8,13 @@ const AboutMe = () => {
   return (
     <div className='aboutme' >
       <h2>ABOUT ME</h2>
-      <p> <ScrollAnimation  color="white" scrollTrigger = {true} text="I build modern, high-quality websites that not only look great but feel intuitive and engaging. Whether it's a business site or a fully interactive web experience, I use cutting-edge technologies like React and GSAP to make every project stand out. Let’s make your ideas a reality!" /></p>
-    </div>
+      <p>
+  <ScrollAnimation  
+    color="white"  
+    scrollTrigger={true}  
+    text="I craft modern, high-performance web applications that merge clean design with seamless functionality. From interactive business websites to 3D experiences with Three.js, I leverage the MERN stack, Nextjs, GSAP,Framer and automation tools to deliver engaging digital solutions. My expertise extends to building intelligent chatbots, integrating AI-driven features, and exploring cutting-edge technologies that make projects scalable, innovative, and future-ready. Let's turn your vision into a powerful digital reality!"  
+  />  
+</p></div>
   )
 }
 

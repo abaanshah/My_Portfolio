@@ -8,7 +8,7 @@
   align-items: center;
   padding: 10px;
   z-index: 999;
-  width: 80vw;
+  width: 65vw;
   /* margin: 0 auto; */
   /* margin-top: 20px; */
   background: rgba(0, 0, 0, 0.3);
@@ -19,6 +19,7 @@
   border: 1px solid rgba(105, 153, 64, 0.4);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   animation:navbar 2s ease;
+  /* overflow: hidden; */
 }
 
 @keyframes navbar {
@@ -74,4 +75,19 @@
 
 .top:hover {
   opacity: 1;
+}
+@media (max-width: 800px) {
+  .navbar {
+    bottom: 0;
+    top: auto;
+    width: 100%;
+    border-radius: 0; /* Rectangle Shape */
+    padding: 15px;
+    /* overflow: hidden; */
+  }
+
+  .nav-links {
+    gap: 20px;
+    font-size: 14px;
+  }
 }

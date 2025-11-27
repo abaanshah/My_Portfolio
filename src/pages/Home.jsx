@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
-import Hero from '../components/Hero'
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "@studio-freight/lenis";
+import Hero from '../components/Hero'
 import AboutMe from "../components/AboutMe";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
+import TechStack from "../components/TechStack";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -41,6 +42,7 @@ const Home = () => {
     <div className='home'>
       <Hero/>
       <AboutMe/>
+      <TechStack/>
       <Projects/>
       <Skills/>
       <Contact/>

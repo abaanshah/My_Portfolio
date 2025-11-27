@@ -1,0 +1,113 @@
+/* Footer Styling */
+.footer {
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 100px;
+  /* background-color: #0e0404; */
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 2px solid #5d5b5b;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  /* background-color: rgb(85, 57, 6); */
+
+}
+
+/* Logo & Tagline */
+.footer-logo h2 {
+  font-size: 1.8rem;
+  color: #aaf542;
+}
+
+.footer-logo p {
+  font-size: 1rem;
+  color: #b0b0b0;
+}
+
+/* Quick Links */
+.footer-links h3, .footer-contact h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #b0f542;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #b0b0b0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #f5b342;
+}
+
+/* Contact Section */
+.footer-contact p {
+  margin-bottom: 5px;
+}
+
+.footer-contact a {
+  color: #b0b0b0;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: #f5b342;
+}
+
+/* Social Media Icons */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #b0b0b0;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #f5b342;
+}
+
+/* Copyright */
+.footer-bottom {
+  margin-top: 20px;
+  margin-left: 70px;
+  /* width: 100vw; */
+  font-size: 0.9rem;
+  color: #b0b0b0;
+  /* background-color: orange; */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-bottom{
+    margin-bottom: 15px;
+  }
+}

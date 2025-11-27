@@ -12,7 +12,7 @@
   justify-content: space-between;
   align-items: center;
   /* border: 1px solid white; */
-  margin-top: 25vh;
+  margin-top: 13vh;
   line-height: 1;
 }
 
@@ -30,7 +30,7 @@
   border-bottom-left-radius: 50%;
 }
 .hero-text{
-  width: 60%;
+  width: 70%;
   /* background: #611e1e; */
   text-align: left;
   margin-left: 50px;
@@ -111,7 +111,7 @@
   /* width: 100vw; */
   background-color: #0b0c0e;
   padding: 35px 0;
-  margin-top: 160px;
+  margin-top: 40px;
   font-size:35px;
   border-top: 1px solid rgb(88, 86, 86);
   border-bottom: 1px solid rgb(88, 86, 86);

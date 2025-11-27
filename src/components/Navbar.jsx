@@ -10,8 +10,9 @@ gsap.registerPlugin(ScrollTrigger,ScrollToPlugin);
 
 const Navbar = () => {
   useEffect(() => {
-    gsap.to(".navbar",{
-      width: "50%", 
+    if(window.innerWidth>=800){
+      gsap.to(".navbar",{
+        width: "50%", 
       y:10,
       duration: 1.5,
       // ease: "power",
@@ -23,8 +24,10 @@ const Navbar = () => {
         scrub: 2, // Smooth transition
       },
     });
-  }, 
-  []);
+    }
+}, 
+[]);
+
     // Custom smooth scrolling function
     const scrollToSection = (e, target) => {
       e.preventDefault();

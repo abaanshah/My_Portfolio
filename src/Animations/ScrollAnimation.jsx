@@ -21,7 +21,7 @@ const ScrollAnimation = ({ text, color = "white", stagger = 0.05 }) => {
         ease: "power2.out",
         scrollTrigger: {
           trigger: textRef.current,
-          start: "top 90%",
+          start: "top 96%",
           end: "top 30%",
           scrub: true,
           // markers:true,

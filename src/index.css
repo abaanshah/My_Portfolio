@@ -11,10 +11,11 @@
   margin: 0;
   box-sizing: border-box;
 }
-/* 
+
 html{
-  scroll-behavior: smooth;
-} */
+  overflow-x:hidden ;
+  /* scroll-behavior: smooth; */
+}
 
 /* body {
   width: 80vw;
