@@ -1,9 +1,12 @@
 {
   "name": "myportfoliowebsite",
+  "homepage": "https://myusername.github.io/My_Portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -13,6 +16,7 @@
     "@studio-freight/lenis": "^1.0.42",
     "@tailwindcss/vite": "^4.0.6",
     "framer-motion": "^12.23.13",
+    "gh-pages": "^6.3.0",
     "gsap": "^3.12.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
