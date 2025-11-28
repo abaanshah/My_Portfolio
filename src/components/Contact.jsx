@@ -19,20 +19,20 @@ function Contact() {
     {
       icon: FaEnvelope,
       label: "Mail Us",
-      details: "abc123@gmail.com",
-      action: () => window.open("mailto:abc123@gmail.com"),
+      details: "abaanshah2003@gmail.com",
+      action: () => window.open("mailto:abaanshah2003@gmail.com"),
     },
     {
       icon: FaPhoneAlt,
       label: "Call Us",
-      details: "+91 9408348329",
-      action: () => window.open("tel:9408348329"),
+      details: "+91 8588925560",
+      action: () => window.open("tel:8588925560"),
     },
     {
       icon: FaWhatsapp,
       label: "WhatsApp",
-      details: "+91 9408348329",
-      action: () => window.open("https://wa.me/9408348329", "_blank"),
+      details: "+91 8588925560",
+      action: () => window.open("https://wa.me/8588925560", "_blank"),
     },
   ];
 
@@ -42,9 +42,7 @@ function Contact() {
     console.log("Form submitted!");
   };
 
-  // Google Maps Embed URL with a simple custom style for a dark/grayscale look
-  // Note: True dark theme requires an API key and a defined map ID,
-  // but adding a style parameter can achieve a high-contrast, non-default look.
+
   
   return (
     // Use the .contact-section class to allow Navbar scrolling functionality

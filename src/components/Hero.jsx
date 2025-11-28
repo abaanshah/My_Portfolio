@@ -5,10 +5,10 @@ import AutoAnimation from "../Animations/AutoAnimation";
 
 // --- Data for social links and skills ---
 const socialLinks = [
-  { name: "LINKEDIN", href: "#" },
-  { name: "GITHUB", href: "#" },
-  { name: "INSTAGRAM", href: "#" },
-  { name: "GMAIL", href: "#" },
+  { name: "LINKEDIN", href: "https://www.linkedin.com/in/syed-abaan-shah-962116286/" },
+  { name: "GITHUB", href: "https://github.com/abaanshah" },
+  { name: "INSTAGRAM", href: "https://www.instagram.com/syedabaanshah/" },
+  { name: "GMAIL", href: "abaanshah2003@gmail.com" },
 ];
 
 const skills = [
@@ -51,9 +51,6 @@ const marqueeKeyframes = `
 `;
 
 const Hero = () => {
-  // ❌ REMOVED: const AutoAnimation = ({ text }) => <span>{text}</span>; ❌
-  // The actual component is now used via the 'import' statement above.
-
   useEffect(() => {
     // GSAP animation remains as it is for visual effect
     gsap.set(".hero", { opacity: 1 });
@@ -75,7 +72,7 @@ const Hero = () => {
         <div className="mt-20 md:mt-32 flex flex-col items-start">
           <div className="hero-text w-full lg:w-11/12 xl:w-4/5 text-left text-[#aebaa1] font-semibold">
             <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[65px] leading-snug lg:leading-tight">
-              I'm a <AutoAnimation text="MERN Stack Developer" /> passionate
+              Hey! I'm Syed Abaan Shah, a <AutoAnimation text="MERN Stack Developer" /> passionate
               about building <AutoAnimation text="scalable, user-friendly," />{" "}
               and visually engaging web applications.
             </p>
