@@ -43,10 +43,10 @@ const Navbar = () => {
     <>
     <nav className="navbar">
       <div className="logo">
-        <p>SABS</p>
+        <a href="/">SABS</a>
       </div>
       <ul className="nav-links">
-      <li><a href=".hero" onClick={(e) => scrollToSection(e, ".hero")}>Home</a></li>
+      {/* <li><a href=".hero" onClick={(e) => scrollToSection(e, ".hero")}>Home</a></li> */}
         <li><a href=".aboutme" onClick={(e) => scrollToSection(e, ".aboutme")}>About</a></li>
         <li><a href=".projects" onClick={(e) => scrollToSection(e, ".projects")}>Projects</a></li>
         <li><a href=".skills" onClick={(e) => scrollToSection(e, ".skills")}>Skills</a></li>

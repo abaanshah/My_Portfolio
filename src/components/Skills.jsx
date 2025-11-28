@@ -1,15 +1,13 @@
 import React, { useState } from "react";
-import "./Skills.css"; // Import CSS for styling
+import "./Skills.css";
 import SpotlightCard from "../ui/SpotlightCard";
 
 const Skills = () => {
-  // Default video when no skill is hovered
   const defaultVideo =
     "https://videos.pexels.com/video-files/2887463/2887463-hd_1920_1080_25fps.mp4";
 
   const [videoSrc, setVideoSrc] = useState(defaultVideo);
 
-  // Skill data with corresponding videos
   const skills = [
     {
       name: "DEVELOPMENT",
@@ -36,20 +34,22 @@ const Skills = () => {
   return (
     <div className="skills">
       <h2>SKILLS</h2>
+
       <div className="skills-container">
         <div className="skill-cards">
           {skills.map((skill, index) => (
-            <SpotlightCard spotlightColor="rgba(100, 329,35, 0.15)"  key={index}> {/* Wrap each card individually */}
+            <SpotlightCard spotlightColor="rgba(100, 329,35, 0.15)" key={index}>
               <div
                 className={`scard ${index % 2 === 0 ? "left" : "right"}`}
-                onMouseEnter={() => setVideoSrc(skill.video)} // Change video on hover
-                onMouseLeave={() => setVideoSrc(defaultVideo)} // Reset to default video
+                onMouseEnter={() => setVideoSrc(skill.video)}
+                onMouseLeave={() => setVideoSrc(defaultVideo)}
               >
                 <p>{skill.name}</p>
               </div>
             </SpotlightCard>
           ))}
         </div>
+
         <div className="skill-video">
           <div className="overlay"></div>
           <video src={videoSrc} autoPlay loop muted className="skill-media" />

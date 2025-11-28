@@ -1,81 +1,177 @@
-.skills{
-  /* height: 100vh; */
+.skills {
   width: 80vw;
   margin: 100px auto;
-
 }
+
+/* Main layout */
 .skills-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10rem;
   margin-top: 100px;
- 
-
 }
 
+/* STACK ON MOBILE */
+@media (max-width: 992px) {
+  .skills-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
 
+/* CARDS COLUMN */
 .skill-cards {
   display: flex;
   flex-direction: column;
   gap: 1.7rem;
 }
 
+/* CARD STYLING */
 .scard {
-  /* background-color: #fff; */
-  height:60px;
+  height: 60px;
   width: 250px;
-  display: flex;
   position: absolute;
   top: 0;
   left: 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: 0.4s ease;
 }
-/* .scard.left {
+
+/* LEFT / RIGHT tilt */
+.scard.left {
   transform: rotate(12deg);
   margin-left: -50px;
-  
 }
 
 .scard.right {
+  transform: rotate(-12deg);
   margin-left: 50px;
-  transform: rotate(12deg);
-} */
-/* .scard:hover {
-  background: #1d1d1d;
-  transform: scale(1.05)  ;
-  margin: 0;
-  
-} */
+}
 
+/* On hover */
+.scard:hover {
+  transform: scale(1.1) rotate(0deg);
+  margin-left: 0px;
+}
+
+/* VIDEO BOX */
 .skill-video {
   width: 550px;
   height: 350px;
+
   overflow: hidden;
   border-radius: 10px;
-  filter:brightness(.75) blur(1px) ;
+
+  filter: brightness(0.75) blur(1px);
   transition: 0.3s ease-in-out;
 }
-.skill-video:hover{
+
+.skill-video:hover {
   filter: brightness(1) blur(0px);
 }
 
+/* RESPONSIVE VIDEO */
+@media (max-width: 992px) {
+  .skill-video {
+    width: 90vw;
+    height: 260px;
+  }
+}
 
-/* .scard:hover .skill-video{
-  filter: blur(0);
-} */
-/* .overlay{
-  position: absolute;
-  background-color:rgba(0,0,0,0.3);
-  width:550px;
-  height: 350px;
-} */
+@media (max-width: 600px) {
+  .skill-video {
+    height: 200px;
+  }
+}
 
+/* VIDEO INSIDE */
 .skill-media {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* LARGE TABLET + SMALL LAPTOP */
+@media (max-width: 1200px) {
+
+  .form-box h1 {
+    left: 28%;
+    font-size: 48px;
+  }
+
+  .contact_us_6 .responsive-container-block.big-container {
+    width: 45%;
+  }
+
+  .reach {
+    width: 100%;
+  }
+}
+
+/* TABLETS */
+@media (max-width: 992px) {
+
+  .contact_us_6 {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6vh;
+  }
+
+  .form-box h1 {
+    position: static;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+
+  .contact_us_6 .responsive-container-block.big-container {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .contact_us_6 .container-block.form-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .reach {
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+  }
+
 }
