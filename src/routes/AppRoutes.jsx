@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+
 import Home from "../pages/Home";
 
 // import AboutMe from "../components/AboutMe";
@@ -14,10 +15,6 @@ function AppRoutes() {
       <MainLayout>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/about" element={<AboutMe />} /> */}
-          {/* <Route path="/partners" element={<ContactUs />} /> */}
-          {/* <Route path="/contact-us" element={<Contact />} /> */}
-          {/* <Route path="/services" element={<Dialer />} /> */}
         </Routes>
       </MainLayout>
     </Router>
