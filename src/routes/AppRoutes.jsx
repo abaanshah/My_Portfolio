@@ -1,17 +1,10 @@
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
-
-// import AboutMe from "../components/AboutMe";
-// import Contact from "../pages/Contact";
 import MainLayout from "../layouts/MainLayout";
-// import Dialer from "../pages/Dialer";
-// import ContactUs from "../pages/ContactUs";
-// import { Contact } from "lucide-react";
 
 function AppRoutes() {
   return (
-    <Router>
+    <Router basename="/My_Portfolio">
       <MainLayout>
         <Routes>
           <Route path="/" element={<Home />} />
