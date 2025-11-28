@@ -26,8 +26,8 @@ const Footer = () => {
         {/* Contact Section */}
         <div className="footer-contact">
           <h3>Contact</h3>
-          <p>Email: <a href="mailto:syed@example.com">syed@example.com</a></p>
-          <p>Phone: <a href="tel:+919876543210">+91 98765 43210</a></p>
+          <p>Email: <a href="mailto:syed@example.com">abaanshah2003@gmail.com</a></p>
+          <p>Phone: <a href="tel:+919876543210">+91 8588925560</a></p>
           <div className="footer-social">
             <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="social-icon" />
