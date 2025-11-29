@@ -34,7 +34,11 @@ const AboutMe = () => {
         <ScrollAnimation
           color="white"
           scrollTrigger={true}
-          text="I craft modern, high-performance web applications that merge clean design with seamless functionality. From interactive business websites to 3D experiences with Three.js, I leverage the MERN stack, Nextjs, GSAP, Framer and automation tools to deliver engaging digital solutions. My expertise extends to building intelligent chatbots, integrating AI-driven features, and exploring cutting-edge technologies that make projects scalable, innovative, and future-ready. Let's turn your vision into a powerful digital reality!"
+          text="I build modern, high-performance digital experiences using the MERN stack, Next.js, and powerful animation tools like GSAP and Framer. My focus is simple: create fast, secure, and visually engaging applications that help businesses grow.
+
+From interactive websites to AI-integrated features and automated workflows, I blend clean design with scalable engineering. Whether it’s enhancing UX, improving performance, or adding intelligent chatbot systems, I turn ideas into reliable, future-ready digital products.
+
+Let’s bring your vision to life with design, speed, and real impact."
         />
       </p>
     </div>

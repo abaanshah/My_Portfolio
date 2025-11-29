@@ -8,8 +8,15 @@ import {
   FaJava,
   FaDocker,
   FaTimes,
+  FaLock,
+  FaRobot,
+  FaPaperPlane,
+  FaEye,
 } from "react-icons/fa";
 import {
+  SiRender,
+  SiRailway,
+  SiCloudinary,
   SiMongodb,
   SiExpress,
   SiTailwindcss,
@@ -27,12 +34,16 @@ import {
   SiVercel,
   SiEslint,
   SiRazorpay,
+  SiNextdotjs,
 } from "react-icons/si";
 import { TbBrandFramerMotion, TbBrandThreejs } from "react-icons/tb";
 import { MdOutlineEmail } from "react-icons/md";
 
 // UPDATED: Added a 'description' for each technology to be displayed in the modal.
 const techCategories = [
+  // ============================
+  // FRONTEND
+  // ============================
   {
     title: "Frontend",
     technologies: [
@@ -40,52 +51,62 @@ const techCategories = [
         name: "React",
         icon: <FaReact size={32} className="text-blue-400" />,
         description:
-          "The foundation of my UIs. I use React to build fast, scalable, and component-based interfaces for everything from product pages to complex dashboards.",
+          "The core library I use to build fast, interactive, and scalable user interfaces for dashboards, websites, and apps.",
+      },
+      {
+        name: "Next.js",
+        icon: <SiNextdotjs size={32} className="text-gray-300" />,
+        description:
+          "The framework I use for SEO-friendly, high-performance applications with server-side rendering and API routes.",
       },
       {
         name: "TypeScript",
         icon: <SiTypescript size={32} className="text-blue-500" />,
         description:
-          "I use TypeScript to add static typing to JavaScript. This is crucial in large applications for preventing bugs, improving code clarity, and enabling better tooling.",
-      },
-      {
-        name: "Redux Toolkit",
-        icon: <SiRedux size={32} className="text-purple-500" />,
-        description:
-          "The central 'brain' for application state. I use Redux to manage global state like shopping carts and user authentication, ensuring data consistency across all components.",
+          "Ensures clean, reliable, and scalable code by adding type-safety to my React and Node.js projects.",
       },
       {
         name: "Tailwind CSS",
         icon: <SiTailwindcss size={32} className="text-teal-400" />,
         description:
-          "My go-to for styling. Tailwind's utility-first approach allows me to build custom, responsive designs directly in the markup, dramatically speeding up development.",
+          "Utility-first CSS framework that helps me build custom, responsive designs quickly and efficiently.",
       },
       {
         name: "Framer Motion",
         icon: <TbBrandFramerMotion size={32} className="text-purple-500" />,
         description:
-          "For creating fluid, high-quality animations in React. I use it for page transitions, interactive micro-animations, and enhancing the overall user experience.",
-      },
-      {
-        name: "Three.js / R3F",
-        icon: <TbBrandThreejs size={32} className="text-gray-800" />,
-        description:
-          "The core technology for 3D web graphics. I use it with React Three Fiber (R3F) to build interactive 3D product visualizers and immersive experiences.",
-      },
-      {
-        name: "React Query",
-        icon: <span className="text-2xl font-bold text-rose-500">RQ</span>,
-        description:
-          "A powerful tool for fetching, caching, and updating server state. It simplifies data management, making applications feel faster and more reliable.",
+          "Used for smooth UI animations, page transitions, and premium micro-interactions.",
       },
       {
         name: "GSAP",
         icon: <span className="text-2xl font-bold text-green-500">GSAP</span>,
         description:
-          "A high-performance animation library for complex, sequenced animations. I use it for intricate timelines and effects that require precise control.",
+          "My go-to library for advanced, high-performance animations and timeline-based effects.",
       },
+      {
+        name: "Redux Toolkit",
+        icon: <SiRedux size={32} className="text-purple-500" />,
+        description:
+          "Global state management for features like carts, filters, user auth, and multi-page data sync.",
+      },
+      {
+        name: "React Query",
+        icon: <span className="text-2xl font-bold text-rose-500">RQ</span>,
+        description:
+          "Handles data fetching, caching, and re-validation to make apps feel faster and more responsive.",
+      },
+      // {
+      //   name: "Three.js / R3F",
+      //   icon: <TbBrandThreejs size={32} className="text-gray-200" />,
+      //   description:
+      //     "Used for building 3D product views and immersive web experiences directly inside React.",
+      // },
     ],
   },
+
+  // ============================
+  // BACKEND
+  // ============================
   {
     title: "Backend",
     technologies: [
@@ -93,113 +114,133 @@ const techCategories = [
         name: "Node.js",
         icon: <FaNodeJs size={32} className="text-green-500" />,
         description:
-          "The JavaScript runtime that powers my backend. It allows me to build fast, scalable network applications and APIs using a single language across the stack.",
+          "JavaScript runtime that powers my backend logic, APIs, and real-time applications.",
       },
       {
         name: "Express.js",
         icon: <SiExpress size={32} className="text-gray-400" />,
         description:
-          "A minimal and flexible Node.js framework for building robust APIs. I use it to define routes, handle requests, and manage server-side logic.",
+          "Framework I use to build secure APIs, route handling, authentication, and server-side logic.",
       },
       {
         name: "MongoDB",
         icon: <SiMongodb size={32} className="text-green-600" />,
         description:
-          "My primary NoSQL database. Its flexible, document-based structure is ideal for storing application data like user profiles, product catalogs, and orders.",
+          "Primary database I use for storing user data, products, orders, and application content.",
       },
       {
-        name: "GraphQL",
-        icon: <SiGraphql size={32} className="text-pink-500" />,
+        name: "Mongoose",
+        icon: <SiMongodb size={32} className="text-green-500" />,
         description:
-          "A modern query language for APIs. It allows the frontend to request exactly the data it needs, making my applications more efficient than with traditional REST APIs.",
+          "ODM library I use to structure MongoDB models and handle database queries cleanly.",
+      },
+      {
+        name: "JWT Auth",
+        icon: <SiJsonwebtokens size={32} className="text-purple-700" />,
+        description:
+          "Secure authentication system for user login, roles, sessions, and protected routes.",
+      },
+      {
+        name: "Bcrypt",
+        icon: <FaLock size={32} className="text-gray-300" />,
+        description:
+          "Used for hashing and securing user passwords in authentication systems.",
       },
       {
         name: "Socket.IO",
         icon: <SiSocketdotio size={32} className="text-gray-400" />,
         description:
-          "For real-time, bi-directional communication. I use it to power features like live chats and real-time notifications, creating instant user interactions.",
+          "Adds real-time communication features like chat, notifications, and live updates.",
       },
       {
         name: "Nodemailer",
         icon: <MdOutlineEmail size={32} className="text-blue-400" />,
         description:
-          "The tool I use to send transactional emails from the server, such as order confirmations, password resets, and shipping notifications.",
+          "Used to send emails such as OTPs, order confirmations, and contact form messages.",
+      },
+      {
+        name: "Cloudinary",
+        icon: <SiCloudinary size={32} className="text-blue-500" />,
+        description:
+          "Cloud media storage I use for uploading, optimizing, and delivering images.",
       },
       {
         name: "Stripe",
         icon: <SiStripe size={32} className="text-indigo-500" />,
         description:
-          "The payment processing platform I integrate to securely handle all customer payments, subscriptions, and financial transactions.",
+          "Secure payment gateway I integrate for card payments, checkouts, and subscription billing.",
       },
       {
         name: "Razorpay",
         icon: <SiRazorpay size={32} className="text-indigo-400" />,
         description:
-          "The payment processing platform I integrate to securely handle all customer payments, subscriptions, and financial transactions.",
-      },
-      {
-        name: "JWT",
-        icon: <SiJsonwebtokens size={32} className="text-purple-700" />,
-        description:
-          "The standard for user authentication. I use JSON Web Tokens to create secure sessions, ensuring that user data is protected.",
+          "Indian payment gateway used for UPI, wallet, and card transactions in e-commerce apps.",
       },
     ],
   },
+
+  // ============================
+  // AI & AUTOMATION
+  // ============================
   {
-    title: "Testing",
+    title: "AI & Automation",
     technologies: [
       {
-        name: "Jest",
-        icon: <SiJest size={32} className="text-red-600" />,
+        name: "OpenAI API",
+        icon: <SiOpenai size={32} className="text-teal-500" />,
         description:
-          "A delightful JavaScript testing framework. I use it to write and run unit and integration tests to ensure my code is reliable and bug-free.",
+          "I integrate AI features like chatbots, content generation, audit automation, and smart recommendations.",
       },
       {
-        name: "React Testing Library",
-        icon: <SiTestinglibrary size={32} className="text-red-500" />,
+        name: "AI Product Visualization",
+        icon: <FaEye size={32} className="text-pink-300" />,
+        description: "Used AI and image processing techniques to build a Rug Visualizer that shows how products look inside real room photos.",
+      },
+      
+      {
+        name: "AI-Enhanced Workflows",
+        icon: <FaRobot size={32} className="text-purple-400" />,
         description:
-          "For testing React components from a user's perspective. It helps me ensure that my UI works as intended and is accessible.",
+          "Used for automating audits, creating redesign suggestions, and speeding up development processes.",
       },
     ],
   },
+
+  // ============================
+  // DEVOPS & DEPLOYMENT
+  // ============================
   {
-    title: "DevOps & Tools",
+    title: "Deployment & Tools",
     technologies: [
+      {
+        name: "Vercel",
+        icon: <SiVercel size={32} className="text-gray-300" />,
+        description:
+          "My primary platform for deploying Next.js and frontend apps with global CDN performance.",
+      },
+      {
+        name: "Render",
+        icon: <SiRender size={32} className="text-blue-400" />,
+        description:
+          "Used for hosting Node.js backends, cron jobs, and API services.",
+      },
+      {
+        name: "Railway",
+        icon: <SiRailway size={32} className="text-purple-300" />,
+        description:
+          "Deploys backend servers and databases with automatic scaling.",
+      },
       {
         name: "Git & GitHub",
         icon: <FaGitAlt size={32} className="text-orange-600" />,
         description:
-          "The foundation of my development workflow. I use Git for version control and GitHub for hosting repositories and collaborating on code.",
+          "Version control and code collaboration for all my projects.",
       },
       {
-        name: "Docker",
-        icon: <FaDocker size={32} className="text-blue-500" />,
+        name: "Postman / Thunder Client",
+        icon: <FaPaperPlane size={32} className="text-red-400" />,
         description:
-          "I use Docker to containerize my applications, ensuring they run consistently across any environment, from my local machine to production.",
-      },
-      {
-        name: "Vite",
-        icon: <SiVite size={32} className="text-purple-600" />,
-        description:
-          "My preferred frontend build tool. It provides an extremely fast development server and an optimized build process for high-performance applications.",
-      },
-      {
-        name: "Vercel",
-        icon: <SiVercel size={32} className="text-gray-800" />,
-        description:
-          "A seamless platform for deploying my frontend applications. It integrates directly with GitHub for continuous deployment and global distribution.",
-      },
-      {
-        name: "ESLint",
-        icon: <SiEslint size={32} className="text-indigo-600" />,
-        description:
-          "A static code analysis tool. I use it to automatically find and fix problems in my code, maintaining high standards of quality and consistency.",
-      },
-      {
-        name: "AI Integration",
-        icon: <SiOpenai size={32} className="text-teal-500" />,
-        description:
-          "Refers to my experience integrating third-party AI services like the OpenAI API to power intelligent features such as chatbots and content generation.",
+          "Used to test APIs, debug routes, and validate server responses.",
       },
     ],
   },
@@ -319,7 +360,6 @@ const TechStack = () => {
   sm:gap-5 
   md:gap-6
 "
-
             >
               {currentCategory &&
                 currentCategory.technologies.map((tech) => (
