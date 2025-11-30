@@ -7,7 +7,7 @@ const AboutMe = () => {
       className=" aboutme
         w-[80vw] 
         h-[60vh] 
-        pt-12 
+        pt-8 
         mx-auto 
         flex 
         flex-col 

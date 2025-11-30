@@ -43,7 +43,7 @@ const Navbar = () => {
     <>
     <nav className="navbar">
       <div className="logo">
-        <a href=".hero" onClick={(e) => scrollToSection(e, ".hero")}>Abaan</a>
+        {/* <a href=".hero" onClick={(e) => scrollToSection(e, ".hero")}>Abaan</a> */}
       </div>
       <ul className="nav-links">
       {/* <li><a href=".hero" onClick={(e) => scrollToSection(e, ".hero")}>Home</a></li> */}

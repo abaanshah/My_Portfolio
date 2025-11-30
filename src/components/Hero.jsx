@@ -74,7 +74,7 @@ const Hero = () => {
         {/* Main Hero Content */}
         <div className="mt-20 md:mt-32 flex flex-col items-start">
           <div className="hero-text w-full lg:w-11/12 xl:w-4/5 text-left text-[#aebaa1] font-semibold">
-            <p className="text-3xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-[57px] leading-snug lg:leading-tight">
+            <p className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[57px] leading-snug lg:leading-tight">
               Hey! I'm Syed Abaan Shah, a{" "}
               <AutoAnimation text="MERN Stack Developer" />
               passionate about building modern, scalable and{" "}
@@ -122,7 +122,7 @@ const Hero = () => {
               </span>
               <span className="absolute translate-x-20 opacity-0 group-hover:opacity-100 group-hover:translate-x-10 translate-y-[1px] transition-all duration-300 text-sm">
                 ➜
-              </span> 
+              </span>
             </button>
           </div>
         </div>
@@ -133,7 +133,7 @@ const Hero = () => {
             {marqueeSkills.map((skill, index) => (
               <p
                 key={index}
-                className="text-lg sm:text-xl md:text-3xl lg:text-4xl text-[#787b7c] font-semibold transition-colors duration-300 hover:text-white"
+                className="text-sm sm:text-base md:text-2xl lg:text-3xl xl:text-4xl text-[#787b7c] font-semibold transition-colors duration-300 hover:text-white"
               >
                 {skill}
               </p>
