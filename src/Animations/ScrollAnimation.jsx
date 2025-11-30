@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ScrollAnimation = ({ text, color = "white", stagger = 0.05 }) => {
+const ScrollAnimation = ({ text, color = "white", stagger = 0.2 }) => {
   const textRef = useRef(null);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ const ScrollAnimation = ({ text, color = "white", stagger = 0.05 }) => {
       {
         opacity: 1,
         color: color,
-        duration: 0.3,
+        duration: 0.5,
         stagger: stagger,
         ease: "power2.out",
         scrollTrigger: {

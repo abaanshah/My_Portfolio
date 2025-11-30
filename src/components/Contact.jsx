@@ -47,8 +47,8 @@ function Contact() {
   return (
     // Use the .contact-section class to allow Navbar scrolling functionality
     <section
-      className="contact-section w-full py-16 lg:py-24"
-      id="contact"
+      className="contact-section contact  w-full py-16 lg:py-24"
+     
     >
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">

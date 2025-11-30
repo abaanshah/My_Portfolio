@@ -4,7 +4,7 @@ import ScrollAnimation from "../Animations/ScrollAnimation";
 const AboutMe = () => {
   return (
     <div
-      className="
+      className=" aboutme
         w-[80vw] 
         h-[60vh] 
         pt-12 

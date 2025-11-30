@@ -98,7 +98,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects" className="py-24 px-4 w-full">
+    <section className=" projects py-24 px-4 w-full">
       <div className="container mx-auto max-w-7xl">
         {/* Section Title */}
         <div className="text-center mb-16">

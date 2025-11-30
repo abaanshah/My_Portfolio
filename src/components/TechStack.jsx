@@ -304,14 +304,14 @@ const TechStack = () => {
   return (
     <>
       <section
-        id="tech-stack"
-        className="
-    pt-45 
+        
+        className=" tech
+    pt-50 
     pb-24 
     px-4 
     w-full 
     min-h-screen 
-    md:pt-40 
+    md:pt-50 
     relative 
     z-10
   "
@@ -323,7 +323,7 @@ const TechStack = () => {
             </h2>
             <p className="mt-4 text-lg text-gray-400 max-w-3xl mx-auto">
               An interactive overview of the tools and technologies I use to
-              build modern web applications.
+              build maodern web applications.
             </p>
           </div>
 
