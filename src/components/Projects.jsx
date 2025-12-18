@@ -28,7 +28,7 @@ const projectsData = [
       "Architected and built a high-performance e-commerce platform focused on 3D product visualization and a secure, streamlined checkout experience using Stripe. Developed a comprehensive admin dashboard for complete control over products, orders, and user management.",
     video: safinacarpetspreview,
     tech: ["React", "Node.js", "MongoDB", "Stripe", "Three.js"],
-    liveUrl: "#",
+    liveUrl: "https://safina-carpet-frontend.onrender.com/",
     githubUrl: "#",
   },
   {
@@ -38,9 +38,12 @@ const projectsData = [
     video: logistosPreview,
     tech: [
       "React",
+      "Nodejs",
+      "MongoDB",
       "TypeScript",
+      "JavaScript",
+      "python",
       "Redux Toolkit",
-      "GraphQL",
       "Tailwind CSS",
       "Framer Motion",
     ],

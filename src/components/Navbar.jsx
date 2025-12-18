@@ -4,6 +4,7 @@ import gsap from "gsap";
 // import { useGSAP } from '@gsap/react';
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ThemeToggle from "./ThemeToggle";
 import "./Navbar.css";
 
 gsap.registerPlugin(ScrollTrigger,ScrollToPlugin);
@@ -53,7 +54,9 @@ const Navbar = () => {
         <li><a href=".skills" onClick={(e) => scrollToSection(e, ".skills")}>Skills</a></li>
         <li><a href=".contact" onClick={(e) => scrollToSection(e, ".contact")}>Contact</a></li>
       </ul>
-      <div className="theme"></div>
+      <div className="theme">
+        {/* <ThemeToggle/>  */}
+        </div>
       
      
     </nav>
